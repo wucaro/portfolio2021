@@ -3,7 +3,7 @@ h1{
     font-size: 2em;
     text-align: center;
     line-height: 2;
-    margin: 40px;
+    margin: 20px;
   }
 
   header{
@@ -26,9 +26,15 @@ h1{
     list-style-type: none;
     white-space: nowrap;
     flex-shrink: 3;
-    font-size: 15px;
+    font-size: 12px;
     
     
+  }
+  a.link{
+    display: block;
+    margin-top: 10px;
+    text-align: left;
+
   }
 .profile{
   order: 1; 
@@ -44,6 +50,12 @@ p.ex2{
   color: rgb(37, 37, 37);
   
 
+}
+p.ex1{
+  border: 3px black;
+  padding: 20px;
+  font-size: 14px;
+  color: rgb(37, 37, 37);
 }
 
   .nav_item{
@@ -106,7 +118,7 @@ footer{
     background-color: #e6ccaa;
     font-size: 12px;
     flex-shrink: 0;
-    
+    margin-top: 100px;
 
   }
 .foot{

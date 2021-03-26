@@ -64,8 +64,8 @@ p.ex1{
   }
 
   .active{
-    color: #be5c6b;
     text-decoration: underline overline #a18765;
+    font-size: 14px;
   }
   body{
     margin: 0;

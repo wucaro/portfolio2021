@@ -124,6 +124,7 @@ footer{
   }
 .foot{
     margin-right: 10px;
+    list-style-type: none;
 }
 
 @keyframes slidein{

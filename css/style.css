@@ -22,7 +22,7 @@ h1{
     display: flex;
     flex-direction: row;
     justify-content: center;
-    width: 60%;
+    width: 100%;
     list-style-type: none;
     white-space: nowrap;
     flex-shrink: 3;
@@ -36,37 +36,20 @@ h1{
     text-align: left;
 
   }
-.profile{
-  order: 1; 
-  flex-basis: auto;
-
-}
-
-p.ex2{
-  order: 2; 
-  border: 1px black;
-  padding: 20px;
-  font-size: 14px;
-  color: rgb(37, 37, 37);
-  
-
-}
-p.ex1{
-  border: 3px black;
-  padding: 20px;
-  font-size: 14px;
-  color: rgb(37, 37, 37);
-}
 
   .nav_item{
 
     margin: 8px;
   }
 
+  /* indicate what page user is on */
+
   .active{
     text-decoration: underline overline #a18765;
-    font-size: 14px;
+    text-transform: uppercase; 
+    
   }
+
   body{
     margin: 0;
     padding: 0;
@@ -78,6 +61,48 @@ p.ex1{
     
   }
 
+  /* about me flex */
+
+
+.contain{
+  margin: 50px;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* bio text */
+
+
+p.ex2{
+  order: 2; 
+  border: 1px black;
+  padding: 20px;
+  font-size: 14px;
+  color: rgb(37, 37, 37);
+  
+
+}
+
+/* profile picture */
+
+.profile{
+  order: 1; 
+  flex-basis: auto;
+
+}
+
+
+p.ex1{
+  border: 3px black;
+  padding: 20px;
+  font-size: 14px;
+  color: rgb(37, 37, 37);
+}
+
+  /* photography grid */
+
+
 .container{
     
     display: grid;
@@ -88,12 +113,9 @@ p.ex1{
     margin: 10px;
 }
 
-.contain{
-  margin: 50px;
-  align-items: center;
-  flex-wrap: wrap;
-  justify-content: center;
-}
+
+/* photography page images */
+
 
 img{
     width: 95%;
@@ -108,18 +130,61 @@ img:hover{
     border:2px solid grey;
 }
 
+/* form on contact page*/
+
+form {
+  border: 3px solid #f1f1f1;
+}
+*.focus{
+  BORDER: 10px red; 
+}
+
+legend{ 
+  font-size: 110%;
+  font-style:italic;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+
+label{
+  display: inline-block;
+  margin-right:10px;
+  width:15%;
+
+}
+input {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+input[type=submit] {
+  background-color: #38803C;
+  color: white;
+  cursor: pointer;
+  width: 100%;
+}
+
+input[type=submit]:hover {
+  opacity: 0.8;
+}
+
+
+
 footer{
     padding: 20px;
     display: flex;
     flex-direction: row;
     text-align: left;
-    list-style-type: none;
     border-top: black;
     background-color: #e6ccaa;
     font-size: 12px;
     flex-shrink: 0;
     margin-top: 100px;
-    list-style-type: none;
 
   }
 .foot{

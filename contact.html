@@ -16,7 +16,7 @@
     <link rel="imgs" type="jpg" href="imgs/profile.jpg">
     <link rel="stylesheet" type="text/css" href="css/html5reset.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
-<title>Contact Me</title>	
+	<title>Contact Me</title>
    
   </head>
 
@@ -35,13 +35,35 @@
   
     </header>
 	<main class = "contain">
-    <p>I'd love to hear from you! Contact me here.</p>
-      <a class = 'link' href = "mailto: wucaro@umich.edu">Send Email</a>
+    <form action="https://formspree.io/f/meqvqkzr" method="POST">
+      <fieldset>
+        <legend>Contact Me</legend>
+    
+      <div class="container">
+        <label for = "fullname"> </label>Your Name
+        <input type="text" id = "fullname" placeholder="Enter Your Name" name = "client_name"><br>
+    
+        <label for = "email"> </label>Your Email
+        <input type = "email" id = "email" name = "emal"><br>
+    
+        <label for = "message"> </label>Leave A Message
+    
+    
+        <textarea placeholder="Enter your message" id = "message" name = "msg"></textarea><br>
+    
+        <label for = "remember"> Remember me </label>
+        
+        <input type="checkbox" checked="checked" id = "remember" name = "check"> 
+        <input type="submit"></input>    
+      </div>
+    </fieldset>
+    </form>
     </main>
-      <footer>
-	<ul class = "foot">
-        <li><a href = "https://www.linkedin.com/in/carolyn-wu-561365157/">LinkedIn</a></li>
-        <li><a href = "https://www.instagram.com/carrielin10/">Instagram</a></li>
+    <footer>
+      <ul>
+        <li class = "foot"><a href = "https://www.linkedin.com/in/carolyn-wu-561365157/">LinkedIn</a></li>
+        <li class = "foot"><a href = "https://www.instagram.com/carrielin10/">Instagram</a></li>
+  
       </ul>
-    </footer>
+        </footer>
     </body>    

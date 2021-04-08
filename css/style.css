@@ -133,6 +133,11 @@ img:hover{
 
 /* form on contact page*/
 
+.contact{
+  display: inline-block;
+  
+}
+
 .con{
   margin: 50px 400px 10px 50px;
   align-items: center;

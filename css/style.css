@@ -1,117 +1,140 @@
 
 h1{
-    font-size: 2em;
-    text-align: center;
-    line-height: 2;
-    margin: 20px;
-  }
 
-  header{
-    background: #fff;
-    border-bottom: 3px solid black;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    flex-basis: auto;
-    flex-shrink: 3;
-    
+  font-size: 2em;
+  text-align: center;
+  line-height: 2;
+  margin-top: 10px;
+}
+
+header{
+  background: #fff;
+  border-bottom: 3px solid black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-basis: auto;
+  flex-shrink: 3;
   
-  }
 
-  .nav_links{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    width: 100%;
-    list-style-type: none;
-    white-space: nowrap;
-    flex-shrink: 3;
-    font-size: 12px;
-    
-    
-  }
-  a.link{
-    display: block;
-    margin-top: 10px;
-    text-align: left;
+}
 
-  }
+/* skip to main content */
 
-  .nav_item{
+.skip a{
+  background: white;
+  left: 0;
+  padding: 7px;
+  -webkit-transition: top 1s ease-out;
+  transition: top 1s ease-out;
+  z-index: 1;
+  position: relative;
+  top: -50px;
+  /*Your code here*/
+}
+.skip a:focus{
+  position: relative;
+  top: 10px;
+}
 
-    margin: 8px;
-  }
+.nav_links{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+  list-style-type: none;
+  white-space: nowrap;
+  flex-shrink: 3;
+  font-size: 12px;
+  
+  
+}
+a.link{
+  display: block;
+  margin-top: 10px;
+  text-align: left;
 
-  /* indicate what page user is on */
+}
 
-  .active{
-    text-decoration: underline overline #a18765;
-    text-transform: uppercase; 
-    
-  }
+.nav_item{
 
-  body{
-    margin: 0;
-    padding: 0;
-    font-size: 16pt; 
-    font-family: 'Raleway', sans-serif;
-    display: flex; 
-    flex-direction: column;
-    
-    
-  }
+  margin: 8px;
+}
 
-  /* about me flex */
+/* indicate what page user is on */
+
+.active{
+  font-weight: bold; 
+  text-transform: uppercase; 
+  
+}
+
+body{
+  margin: 0;
+  padding: 0;
+  font-size: 16pt; 
+  font-family: 'Raleway', sans-serif;
+  display: flex; 
+  flex-direction: column;
+  
+  
+}
+
+/* about me flex */
 
 
 .contain{
-  margin: 50px;
-  align-items: center;
-  flex-wrap: wrap;
-  justify-content: center;
-  border: 1px black;
+margin: 30px;
+align-items: center;
+flex-wrap: wrap;
+justify-content: center;
+border: 1px black;
+
 }
 
 /* bio text */
 
 
-p.ex2{
-  order: 2; 
-  border: 1px black;
-  padding: 20px;
-  font-size: 14px;
-  color: rgb(37, 37, 37);
-  
+.ex2{
+order: 2; 
+margin: auto;
+font-size: 14px;
+color: rgb(37, 37, 37);
+width: 100%;
+padding: 10px 10px 10px 10px;
+
 
 }
 
 /* profile picture */
 
 .profile{
-  order: 1; 
-  flex-basis: auto;
+order: 1; 
+flex-basis: auto;
+margin: 10px 40px 40px 5px;
+width: 100%;
+height: 100%
 
 }
 
 
 p.ex1{
-  border: 3px black;
-  padding: 20px;
-  font-size: 14px;
-  color: rgb(37, 37, 37);
+padding: 20px;
+font-size: 14px;
+color: rgb(37, 37, 37);
 }
 
-  /* photography grid */
+/* photography grid */
 
 
 .container{
-    
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto auto auto auto;
-    grid-row-gap: 10px;
-    grid-column-gap: 10px;
-    margin: 10px;
+  
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto auto auto auto auto auto auto auto auto;
+  grid-row-gap: 10px;
+  grid-column-gap: 10px;
+  margin: 10px;
 }
 
 
@@ -119,109 +142,237 @@ p.ex1{
 
 
 img{
-    width: 95%;
-    /*filter: grayscale(0.90);*/
-    padding: 5px;
-    transition-property:filter;
-    transition-duration: 0.25s;
+  width: 95%;
+  /*filter: grayscale(0.90);*/
+  padding: 5px;
+  transition-property:filter;
+  transition-duration: 0.25s;
 }
 
 img:hover{
-    filter: grayscale(0);
-    border:2px solid grey;
+  filter: grayscale(0);
+  border:2px solid grey;
+}
+
+
+/* work.html*/
+
+#title{
+  margin-top: 50px;
+  margin-bottom: 20px;
+  margin-left: 15px;
+  font-weight: bold;
+  text-align: center;
+
+}
+.cheps_pic{
+  width: 90%;
+  margin-left: 20px;
+}
+.cheps_pic2{
+  margin-left: 1px;
+}
+
+#cheps_description{
+  width: 70%;
+
+  background-color: #ffe2bd;
+  margin: 40px;
+  padding: 20px;
+  font-size: 14px;
 }
 
 /* form on contact page*/
 
 .contact{
-  display: inline-block;
-  
+display: inline-block;
+
 }
 
 .con{
-  margin: 50px 400px 10px 50px;
-  align-items: center;
-  flex-wrap: wrap;
-  justify-content: center;
+margin: 50px 400px 10px 50px;
+align-items: center;
+flex-wrap: wrap;
+justify-content: center;
 }
 
 form {
-  border: 3px solid #f1f1f1;
+border: 3px solid #f1f1f1;
+width: 500%;
+margin: 10px 10px 10px 0px;
+background-color: rgb(182, 216, 238);
 }
 *.focus{
-  BORDER: 10px red; 
+BORDER: 10px red; 
 }
 
 legend{ 
-  font-size: 110%;
-  font-style:italic;
-  text-transform: uppercase;
-  text-align: center;
-  padding: 20px 20px 20px 20px;
+font-size: 110%;
+font-style:italic;
+text-transform: uppercase;
+text-align: center;
+padding: 20px 20px 20px 20px;
 }
 
 
 label{
-  display: inline-block;
-  margin: 10px; 
-  width:15%;
+display: inline-block;
+margin: 10px; 
+width:15%;
 
 }
 input {
-  width: 40%;
-  padding: 12px 20px 20px 20px;
-  margin: 20px 0;
-  display: inline-block;
-  border: 1px solid #ccc;
-  box-sizing: border-box;
+width: 60%;
+padding: 10px;
+margin: 10px 0;
+display: inline-block;
+border: 1px solid #ccc;
+box-sizing: border-box;
 }
 
 input[type=submit] {
-  background-color: #38803C;
-  color: white;
-  cursor: pointer;
-  width: 30%;
-  padding: 12px 20px;
-  margin: 20px 20px 20px 70px; 
+background-color: #38803C;
+color: white;
+cursor: pointer;
+width: 40%;
+padding: 10px 20px;
+margin: 20px 20px 20px 60px; 
 }
 
 .cont{
-  margin: auto;
+margin: auto;
 }
+
+
 
 input[type=submit]:hover {
-  opacity: 0.8;
+opacity: 0.8;
 }
 
-.message{
+textarea{
+  -webkit-writing-mode: horizontal-tb !important;
+  text-rendering: auto;
+  color: -internal-light-dark(black, white);
+  letter-spacing: normal;
+  word-spacing: normal;
+  text-transform: none;
+  text-indent: 0px;
+  text-shadow: none;
   display: inline-block;
-  margin: 20px 0;
-  width:15%;
+  text-align: start;
+  appearance: auto;
+  background-color: -internal-light-dark(rgb(255, 255, 255), rgb(59, 59, 59));
+  -webkit-rtl-ordering: logical;
+  flex-direction: column;
+  resize: auto;
+  cursor: text;
+  white-space: pre-wrap;
+  overflow-wrap: break-word;
+  column-count: initial !important;
+  margin-top: 10px;
+  font: 400 13.3333px Arial;
+  border-width: 1px;
+  border-style: solid;
+  border-color: -internal-light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
+  border-image: initial;
+  padding: 10px;
+  height: 150px;
 
 }
 
 footer{
-    padding: 20px;
-    display: flex;
-    flex-direction: row;
-    text-align: left;
-    border-top: black;
-    background-color: #e6ccaa;
-    font-size: 12px;
-    flex-shrink: 0;
-    margin-top: 100px;
+  padding: 20px;
+  display: flex;
+  flex-direction: row;
+  text-align: left;
+  border-top: black;
+  background-color: #e6ccaa;
+  font-size: 12px;
+  flex-shrink: 0;
+  margin-top: 100px;
 
-  }
+}
 .foot{
-    margin-right: 10px;
-    list-style-type: none;
+  margin-right: 10px;
+  list-style-type: none;
 }
 
-@keyframes slidein{
-    from{
-        left: - 1000px
-    }
-    to{
-        left: 0;
-    }
+.feet{
+  margin-right: 10px;
+  list-style-type: none;
+}
+
+.im{
+width: 30%;
+display:inline-block;
+
+}
+
+.forms{
+display: inline-block;
+width: 30%; 
+}
+
+@media all and (min-width: 750px){
+  
+ /* header*/
+ 
+ h1{
+   margin-top: 50px;
+ }
+/* profile pic*/
+.profile{
+  width: 80%;
+  margin: 10px 10px 10px 50px;
+}
+
+.contain{
+ margin: 50px;
+}
+/* bio text*/
+
+.ex2{
+  width: 80%;
+  margin-bottom: 25px;
+  
+  }
+
+/* work text*/
+#cheps_description{
+  width: 70%;
+
+  background-color: #ffe2bd;
+  margin-left: 80px;
+  padding: 20px;
+  font-size: 18px;
+}
+.cheps_pic2{
+  margin-left: 10px;
+}
+footer{
+  margin-top: 160px;
+}
+
+.container{
+  
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto auto auto;
+  grid-row-gap: 10px;
+  grid-column-gap: 10px;
+  margin: 10px;
+}
+
+.forms{
+  margin-left: 100px;
+  margin-bottom: 70px;
+  margin-top: 80px;
+}
+
+input[type=submit] {
+  margin: 20px 20px 20px 95px; 
+  width: 30%;
+  }
+
+
 }

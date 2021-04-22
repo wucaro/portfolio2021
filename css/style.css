@@ -19,7 +19,6 @@ header{
   align-items: center;
   flex-basis: auto;
   flex-shrink: 3;
-  
 
 }
 #headers{
@@ -54,7 +53,7 @@ header{
   white-space: nowrap;
   flex-shrink: 3;
   font-size: 12px;
-
+  margin-bottom: 10px; 
    
   
 }
@@ -160,6 +159,23 @@ color: rgb(37, 37, 37);
 
 
 /* photography page images */
+
+#phototitle{
+  margin-top: 50px;
+  margin-bottom: 20px;
+  margin-left: 15px;
+  font-weight: bold;
+  text-align: center;
+  font-size: 30px; 
+
+}
+#subtitle{
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: 15px;
+  font-size: 12px; 
+  text-align: center;
+}
 
 .caption{
   position: relative;
@@ -396,7 +412,7 @@ textarea{
 
 footer{
   padding: 20px;
-  border-top: black;
+  border-top: solid black;
   background-color: #88a3a9;
   font-size: 12px;
 
@@ -409,7 +425,8 @@ footer{
   display: flex;
  
   flex-direction: row;
-  text-align: left; 
+  text-align: center;
+  justify-content: center;  
 
 
 }

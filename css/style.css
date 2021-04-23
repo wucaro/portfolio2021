@@ -62,6 +62,18 @@ a.link{
   margin-top: 10px;
   text-align: left;
   text-decoration: none; 
+  
+}
+a:link{
+  color: black;
+}
+
+a:hover {
+  color: blue;
+}
+
+a:visited{
+  color: black; 
 }
 
 .nav_item{
@@ -291,22 +303,6 @@ img:hover {
 }
 
 /* form on contact page*/
-@keyframes bounceIn {
-  0% {
-    transform: scale(0.1);
-    opacity: 0;
-  }
-  60% {
-    transform: scale(1.2);
-    opacity: 1;
-  }
-  100% {
-    transform: scale(1);
-  }
-}
-.contact{
-  animation: bounceIn 0.5s;
-}
 
 .contact{
 display: inline-block;
@@ -421,12 +417,13 @@ footer{
   border-top: solid black;
   background-color: #88a3a9;
   font-size: 12px;
-
+  color: white; 
   margin-top: 100px;
   position: relative; 
   
 
 }
+
 #feet{
   display: flex;
  
@@ -466,7 +463,8 @@ width: 30%;
   font-size: 18px;
 }
 
-/* profile pic*/
+/* profile pic flip card*/
+
 .profile{
   width: 80%;
   margin: 10px 10px 10px 50px;
@@ -543,6 +541,24 @@ footer{
   padding: 50px; 
   
 }
+/*contact form animation*/ 
+@keyframes bounceIn {
+  0% {
+    transform: scale(0.1);
+    opacity: 0;
+  }
+  60% {
+    transform: scale(1.2);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+.contact{
+  animation: bounceIn 0.5s;
+}
+
 
 .container{
   

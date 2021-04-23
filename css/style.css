@@ -283,6 +283,10 @@ img:hover {
   
   background-size: cover ;
   background-position: left;
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  
 
 }
 
